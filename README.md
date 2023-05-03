@@ -1,6 +1,6 @@
 # 📩 Send LinkedIn Connection Request from Excel file 🗂️
 
-This script will help you automate sending connection requests on LinkedIn with an excel containing first and last name. 
+This script will help you automate sending connection requests on LinkedIn with an excel containing first and last name. I got tired of manually entering people's name every term, this help solve the problem of be trying to endorse all my students as a TA. I just export students' name list and watch the script do its magic
 
 ## 📚 Requirements
 
