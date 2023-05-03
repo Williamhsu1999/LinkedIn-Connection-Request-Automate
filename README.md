@@ -1,4 +1,4 @@
-# 🌟 Send LinkedIn Connection Request from Excel file🌟
+# 📩 Send LinkedIn Connection Request from Excel file 🗂️
 
 This script will help you automate sending connection requests on LinkedIn with an excel containing first and last name. 
 
@@ -28,21 +28,22 @@ pip install pandas selenium openpyxl
 
 ### 4. Update the script
 
-📝 Open the script in a text editor and replace the following:
+📝 Open the script in anycode editor and replace the following:
 
 - Replace `yourusernamehere` and `yourpasswordhere` with your LinkedIn username and password.
 
 ```python
 linkedin_username = "yourusernamehere"
 linkedin_password = "yourpasswordhere"
-
+```
 Update the path to the Excel file containing the list of names.
-
-data = pd.read_excel("C:/Users/willi/Desktop/w23.xlsx", engine='openpyxl')
-
+```
+data = pd.read_excel("C:/Users/willi/Desktop/namelist.xlsx", engine='openpyxl')
+```
 Update the executable_path parameter with the path to your ChromeDriver.
+```
 driver = webdriver.Chrome(executable_path="C:/Users/your_username/Desktop/chromedriver.exe", options=options)
-
+```
 
 # 🏃‍♂️ How to run the script
 
