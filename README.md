@@ -18,9 +18,9 @@ This script will help you automate sending connection requests on LinkedIn with 
 ### 2. Install required Python packages
 
 📦 Run the following command in your terminal/command prompt to install the necessary packages:
-
+```
 pip install pandas selenium openpyxl
-
+```
 
 ### 3. Download ChromeDriver
 
