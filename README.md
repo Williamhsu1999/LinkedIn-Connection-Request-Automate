@@ -36,15 +36,15 @@ pip install pandas selenium openpyxl
 linkedin_username = "yourusernamehere"
 linkedin_password = "yourpasswordhere"
 ```
--Update the path to the Excel file containing the list of names.
+- Update the path to the Excel file containing the list of names.
 ```
 data = pd.read_excel("C:/Users/your_username/location/namelist.xlsx", engine='openpyxl')
 ```
--Update the executable_path parameter with the path to your ChromeDriver.
+- Update the executable_path parameter with the path to your ChromeDriver.
 ```
 driver = webdriver.Chrome(executable_path="C:/Users/your_username/location/chromedriver.exe", options=options)
 ```
--Modify the waiting time.
+- Modify the waiting time.
 To change the time the script waits before moving on to the next person, locate the following line of code in the script:
 ```
 time.sleep(5)
@@ -66,6 +66,6 @@ python linkedinscript.py
 5. Press `Enter` in the terminal/command prompt to start the automation process.
 
 🎉 The script will now go through the names in the Excel file and send connection requests on LinkedIn. Enjoy your automated connections! 🤖
-(Updated- check the changed the script so you have to click the connect botton yourself)
+(Updated: Update the script so you have to click the connect botton yourself, with an X seconds of window before skipping to the next person on the list, this way you don't connect with random people with similar names).
 
 
