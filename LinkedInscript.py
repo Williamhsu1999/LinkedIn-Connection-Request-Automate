@@ -10,14 +10,14 @@ import time
 linkedin_username = "yourusernamehere"
 linkedin_password = "yourpasswordhere"
 
-data = pd.read_excel("C:/Users/willi/Desktop/w23.xlsx", engine='openpyxl')
+data = pd.read_excel("C:/Users/willi/Documents\GitHub\LinkedIn-Script/namelist.xlsx", engine='openpyxl')
 
 def main():
     options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(executable_path="C:/Users/your_username/Desktop/chromedriver.exe", options=options)
+    driver = webdriver.Chrome(executable_path="C:/Users/willi/Documents\GitHub\LinkedIn-Script/chromedriver.exe", options=options)
 
     login_to_linkedin(driver)
-    input("Press Enter after manually logging in...")
+    input("Press ENTER on CMD after manually logging in...")
 
     for index, row in data.iterrows():
         perform_search(driver, row['First Name'], row['Last Name'])
